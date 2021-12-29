@@ -11,10 +11,10 @@
 4. 使用`docker-compose up` 启动hadoop容器集群；
 
 关于hadoop容器集群的规划在文件docker-compose.yml中:
-hadoop-01: NameNode, DataNode, NodeManager, HistoryServer
-hadoop-02: SecondaryNameNode, DataNode, NodeManager
-hadoop-03: ResourceManager, DataNode, NodeManager
-hadoop-04: DataNode, NodeManager
-hadoop-05: DataNode, NodeManager
+- hadoop-01: NameNode, DataNode, NodeManager, HistoryServer
+- hadoop-02: SecondaryNameNode, DataNode, NodeManager
+- hadoop-03: ResourceManager, DataNode, NodeManager
+- hadoop-04: DataNode, NodeManager
+- hadoop-05: DataNode, NodeManager
 
 接下来开始愉快的hadoop之旅吧！😏
