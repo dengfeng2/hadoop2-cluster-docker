@@ -17,4 +17,10 @@
 - hadoop-04: DataNode, NodeManager
 - hadoop-05: DataNode, NodeManager
 
+按照如上规划，接下来应该：
+1. 在hadoop-01上执行`hdfs namenode -format`；
+2. 在hadoop-01的${HADOOP_HOME}/sbin/目录下，执行`./start-dfs.sh`；
+3. 在hadoop-03的${HADOOP_HOME}/sbin/目录下，执行`./start-yarn.sh`；
+4. 在hadoop-01的${HADOOP_HOME}/sbin/目录下，执行`./mr-jobhistory-daemon.sh start historyserver`；
+
 接下来开始愉快的hadoop之旅吧！😏
