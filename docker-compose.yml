@@ -10,6 +10,7 @@ services:
         tty: true
         ports:
           - "50070:50070"
+          - "8088:8088"
           - "19888:19888"
     hadoop-02:
         image: hadoop2:latest
@@ -28,24 +29,6 @@ services:
         networks:
           - hadoop-net
         hostname: hadoop-03
-        tty: true
-        ports:
-          - "8088:8088"
-    hadoop-04:
-        image: hadoop2:latest
-        volumes:
-          - ./etc-hadoop:/etc-hadoop
-        networks:
-          - hadoop-net
-        hostname: hadoop-04
-        tty: true
-    hadoop-05:
-        image: hadoop2:latest
-        volumes:
-          - ./etc-hadoop:/etc-hadoop
-        networks:
-          - hadoop-net
-        hostname: hadoop-05
         tty: true
 
 networks:

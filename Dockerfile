@@ -25,6 +25,7 @@ ADD ${HADOOP_PACKAGE}.tar.gz /
 RUN ln -s /${HADOOP_PACKAGE} /hadoop && mkdir /etc-hadoop
 
 ENV HADOOP_HOME=/hadoop
-ENV PATH=$PATH:${HADOOP_HOME}/bin
+ENV HADOOP_CONF_DIR=/etc-hadoop
+ENV PATH=$PATH:${HADOOP_HOME}/bin:${HADOOP_HOME}/sbin
 
-CMD ["sh", "-c", "/usr/sbin/sshd; cp -r /etc-hadoop/* /hadoop/etc/hadoop/; bash"]
+CMD ["sh", "-c", "/usr/sbin/sshd; bash"]
