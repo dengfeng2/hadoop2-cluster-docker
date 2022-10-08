@@ -19,10 +19,10 @@
 <configuration>
     <property>
         <name>dfs.namenode.http-address</name>
-        <value>hadoop-01:50070</value>
+        <value>hadoop01:50070</value>
     </property>
     <property>
         <name>dfs.namenode.secondary.http-address</name>
-        <value>hadoop-02:50090</value>
+        <value>hadoop02:50090</value>
     </property>
 </configuration>

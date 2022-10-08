@@ -23,7 +23,7 @@
 
 # The java implementation to use.
 # export JAVA_HOME=${JAVA_HOME}
-export JAVA_HOME=/usr/lib/jvm/java-1.8.0-openjdk
+export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
 export HADOOP_HOME=/hadoop
 
 # The jsvc implementation to use. Jsvc is required to run secure datanodes
